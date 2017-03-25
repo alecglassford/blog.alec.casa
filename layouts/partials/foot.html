@@ -1,0 +1,15 @@
+</div>
+
+{{ if or (isset .Site.Params "footergraphic") (isset .Site.Params "footerhtml") }}
+<footer class="center">
+  {{ if isset .Site.Params "footerhtml" }}
+  <p> {{ .Site.Params.footerHTML | safeHTML }} </p>
+  {{ end }}
+  {{ if isset .Site.Params "footergraphic" }}
+  <img src="{{ .Site.BaseURL }}{{ .Site.Params.footerGraphic }}" alt="{{ .Site.Params.footerGraphicAlt }}" title="{{ .Site.Params.footerGraphicTitle }}"/>
+  {{ end }}
+</footer>
+{{ end }}
+
+</body>
+</html>

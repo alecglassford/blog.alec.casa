@@ -1,0 +1,13 @@
+languageCode = "en-us"
+title = "La Specola"
+baseURL = "https://blog.alec.casa"
+theme = "heather-hugo"
+customCSS = "static/custom.css"
+
+[permalinks]
+post = "/:year/:month/:day/:title/"
+
+[params]
+customCSS = "custom.css"
+readMoreLabel = "∞"
+description = "[Alec Glassford](https://alecglassford.com)'s blog"
