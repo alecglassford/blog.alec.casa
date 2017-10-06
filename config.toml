@@ -7,6 +7,9 @@ customCSS = "static/custom.css"
 [permalinks]
 post = "/:year/:month/:day/:title/"
 
+[author]
+name = "Alec Glassford"
+
 [params]
 customCSS = "custom.css"
 readMoreLabel = "∞"

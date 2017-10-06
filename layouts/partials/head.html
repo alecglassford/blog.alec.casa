@@ -5,7 +5,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>{{ .Site.Title }}</title>
   <meta name="author" content="{{ .Site.Author.name }}">
-  <meta name="description" content="{{ .Site.Params.description }}">
+  <meta name="description" content="{{ .Site.Params.description | markdownify }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Icons -->
@@ -34,19 +34,6 @@
 </head>
 
 <body class="{{ with .Site.Params.pageLayoutClass }}{{ . }}{{ end }}">
-  {{ if or (isset .Site.Params "headergraphic") (isset .Site.Params "headerhtml") }}
-  <div class="header center">
-    {{ if isset .Site.Params "headerhtml" }}
-    <p> {{ .Site.Params.headerHTML | safeHTML }} </p>
-    {{ end }}
-    {{ if isset .Site.Params "headergraphic" }}
-    <a href="/">
-      <img src="{{ .Site.BaseURL }}{{ .Site.Params.headerGraphic }}" alt="{{ .Site.Params.headerGraphicAlt }}" title="{{ .Site.Params.headerGraphicTitle }}"/>
-    </a>
-    {{ end }}
-  </div>
-  {{ end }}
-
   <div class="wrap">
     <header class="mb">
       <h1 class="h2 m-0"><a href="/">{{ .Site.Title }}</a></h1>

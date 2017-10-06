@@ -1,16 +1,7 @@
-</div>
-
-{{ if or (isset .Site.Params "footergraphic") (isset .Site.Params "footerhtml") }}
-<footer class="center">
-  {{ if isset .Site.Params "footerhtml" }}
-  <p> {{ .Site.Params.footerHTML | safeHTML }} </p>
-  {{ end }}
-  {{ if isset .Site.Params "footergraphic" }}
-  <img src="{{ .Site.BaseURL }}{{ .Site.Params.footerGraphic }}" alt="{{ .Site.Params.footerGraphicAlt }}" title="{{ .Site.Params.footerGraphicTitle }}"/>
-  {{ end }}
-</footer>
-{{ end }}
-
-<noscript><p><img src="//stat.alec.casa/piwik.php?idsite=4&rec=1" style="border:0;" alt="" /></p></noscript>
+  </div>
+  <footer>
+    <p>©️ {{ .Site.Author.name }} {{ now.Format "2006" }} ✌️</p>
+  </footer>
+  <noscript><p><img src="//stat.alec.casa/piwik.php?idsite=4&rec=1" style="border:0;" alt="" /></p></noscript>
 </body>
 </html>
