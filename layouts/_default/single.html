@@ -3,7 +3,9 @@
 <main>
 <article class="post">
   <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
+  {{ if gt .Date.Year  "2016" }}
   <p class="small gray date"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 02, 2006" }}</time></p>
+  {{ end }}
   {{ .Content }}
 </article>
 </main>
