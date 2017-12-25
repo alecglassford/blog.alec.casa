@@ -1,0 +1,1 @@
+../node_modules/simple-form-js-component/build/SimpleForm.js

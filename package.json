@@ -1,0 +1,7 @@
+{
+  "name": "la-specola",
+  "private": true,
+  "dependencies": {
+    "simple-form-js-component": "^0.1.0"
+  }
+}

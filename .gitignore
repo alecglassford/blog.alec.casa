@@ -1,3 +1,5 @@
 .DS_Store
 .firebaserc
 public
+*.log
+node_modules/
