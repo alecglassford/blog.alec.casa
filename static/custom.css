@@ -16,6 +16,10 @@ p.date {
   margin-bottom: 48px;
 }
 
+header {
+  text-align: center;
+}
+
 footer p,
 .wrap {
   max-width: 700px;
