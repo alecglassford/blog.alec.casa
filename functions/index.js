@@ -2,7 +2,7 @@ const admin = require('firebase-admin');
 const functions = require('firebase-functions');
 const niceware = require('niceware');
 
-admin.initializeApp(functions.config().firebase);
+admin.initializeApp();
 
 exports.recordQuestion = functions.https.onRequest((req, res) => {
   if (req.method !== 'POST') {
