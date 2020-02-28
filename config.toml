@@ -14,3 +14,6 @@ name = "Alec Glassford"
 customCSS = "custom.css"
 readMoreLabel = "∞"
 description = "[Alec Glassford](https://alecglassford.com)'s blog"
+
+[markup.goldmark.renderer]
+unsafe = true
