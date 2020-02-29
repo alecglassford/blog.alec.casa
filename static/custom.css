@@ -33,3 +33,7 @@ footer p{
   color: grey;
   font-size: 80%;
 }
+
+audio {
+  width: 100%;
+}
